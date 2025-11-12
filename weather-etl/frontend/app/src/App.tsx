@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { TextField, Autocomplete, Button } from '@mui/material';
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 interface Country {
@@ -46,10 +44,6 @@ function App() {
     const data = await countriesResponse.json()
     setAllCountryData(data)
   }
-
-  useEffect(() => {
-    console.log(selectedCountryData)
-  }, [selectedCountryData]);
 
   useEffect(() => {
     getCountryNames()
