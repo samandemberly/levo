@@ -1,0 +1,188 @@
+2025-11-12 11:49:54.081 EST [67286] LOG:  starting PostgreSQL 15.14 (Homebrew) on x86_64-apple-darwin19.6.0, compiled by Apple clang version 12.0.0 (clang-1200.0.32.29), 64-bit
+2025-11-12 11:49:54.085 EST [67286] LOG:  listening on IPv6 address "::1", port 5432
+2025-11-12 11:49:54.085 EST [67286] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-11-12 11:49:54.086 EST [67286] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-11-12 11:49:54.095 EST [67289] LOG:  database system was shut down at 2025-11-12 11:49:24 EST
+2025-11-12 11:49:54.102 EST [67286] LOG:  database system is ready to accept connections
+2025-11-12 11:49:57.701 EST [67304] ERROR:  database "postgres" already exists
+2025-11-12 11:49:57.701 EST [67304] STATEMENT:  CREATE DATABASE postgres;
+2025-11-12 11:54:54.105 EST [67287] LOG:  checkpoint starting: time
+2025-11-12 11:54:54.117 EST [67287] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.003 s, total=0.014 s; sync files=2, longest=0.003 s, average=0.002 s; distance=0 kB, estimate=0 kB
+2025-11-12 12:27:38.525 EST [68384] ERROR:  syntax error at or near ":" at character 89
+2025-11-12 12:27:38.525 EST [68384] STATEMENT:  
+	    CREATE TABLE IF NOT EXISTS countries (
+	      id SERIAL PRIMARY KEY,
+	      languages: TEXT[]
+	      name TEXT,
+	      region TEXT,
+	      population BIGINT,
+	      area FLOAT,
+	      density FLOAT
+	    )
+	  
+2025-11-12 12:28:16.446 EST [68403] ERROR:  syntax error at or near ":" at character 89
+2025-11-12 12:28:16.446 EST [68403] STATEMENT:  
+	    CREATE TABLE IF NOT EXISTS countries (
+	      id SERIAL PRIMARY KEY,
+	      languages: TEXT[],
+	      name TEXT,
+	      region TEXT,
+	      population BIGINT,
+	      area FLOAT,
+	      density FLOAT
+	    )
+	  
+2025-11-12 12:31:04.739 EST [68451] ERROR:  syntax error at or near "user" at character 13
+2025-11-12 12:31:04.739 EST [68451] STATEMENT:  CREATE USER user WITH PASSWORD 'password';
+2025-11-12 12:32:32.321 EST [68451] ERROR:  syntax error at or near "psql" at character 1
+2025-11-12 12:32:32.321 EST [68451] STATEMENT:  psql -U myuser -d postgres
+	;
+2025-11-12 12:34:02.307 EST [68531] ERROR:  syntax error at or near ":" at character 89
+2025-11-12 12:34:02.307 EST [68531] STATEMENT:  
+	    CREATE TABLE IF NOT EXISTS countries (
+	      id SERIAL PRIMARY KEY,
+	      languages: TEXT[],
+	      name TEXT,
+	      region TEXT,
+	      population BIGINT,
+	      area FLOAT,
+	      density FLOAT
+	    )
+	  
+2025-11-12 12:34:54.220 EST [67287] LOG:  checkpoint starting: time
+2025-11-12 12:34:55.252 EST [67287] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.025 s, sync=0.005 s, total=1.036 s; sync files=9, longest=0.003 s, average=0.001 s; distance=4 kB, estimate=4 kB
+2025-11-12 12:35:30.482 EST [68585] ERROR:  permission denied for schema public at character 33
+2025-11-12 12:35:30.482 EST [68585] STATEMENT:  
+	    CREATE TABLE IF NOT EXISTS countries (
+	      id SERIAL PRIMARY KEY,
+	      name TEXT,
+	      region TEXT,
+	      population BIGINT,
+	      area FLOAT,
+	      density FLOAT
+	    )
+	  
+2025-11-12 12:36:19.630 EST [68638] ERROR:  permission denied for schema public at character 33
+2025-11-12 12:36:19.630 EST [68638] STATEMENT:  
+	    CREATE TABLE IF NOT EXISTS countries (
+	      id SERIAL PRIMARY KEY,
+	      languages TEXT[],
+	      name TEXT,
+	      region TEXT,
+	      population BIGINT,
+	      area FLOAT,
+	      density FLOAT
+	    )
+	  
+2025-11-12 12:38:23.135 EST [68711] ERROR:  permission denied for schema public at character 33
+2025-11-12 12:38:23.135 EST [68711] STATEMENT:  
+	    CREATE TABLE IF NOT EXISTS countries (
+	      id SERIAL PRIMARY KEY,
+	      languages TEXT[],
+	      name TEXT,
+	      region TEXT,
+	      population BIGINT,
+	      area FLOAT,
+	      density FLOAT
+	    )
+	  
+2025-11-12 12:39:25.541 EST [68737] ERROR:  schema "postgres" does not exist
+2025-11-12 12:39:25.541 EST [68737] STATEMENT:  GRANT USAGE ON SCHEMA postgres TO myuser;
+2025-11-12 12:39:54.273 EST [67287] LOG:  checkpoint starting: time
+2025-11-12 12:39:54.414 EST [67287] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.112 s, sync=0.002 s, total=0.142 s; sync files=2, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=4 kB
+2025-11-12 12:40:45.363 EST [68737] ERROR:  schema "postgres" does not exist
+2025-11-12 12:40:45.363 EST [68737] STATEMENT:  GRANT USAGE ON SCHEMA postgres TO myuser;
+2025-11-12 12:41:01.923 EST [68784] ERROR:  permission denied for schema public at character 33
+2025-11-12 12:41:01.923 EST [68784] STATEMENT:  
+	    CREATE TABLE IF NOT EXISTS countries (
+	      id SERIAL PRIMARY KEY,
+	      languages TEXT[],
+	      name TEXT,
+	      region TEXT,
+	      population BIGINT,
+	      area FLOAT,
+	      density FLOAT
+	    )
+	  
+2025-11-12 12:44:54.424 EST [67287] LOG:  checkpoint starting: time
+2025-11-12 12:44:55.141 EST [67287] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.710 s, sync=0.002 s, total=0.717 s; sync files=8, longest=0.001 s, average=0.001 s; distance=2 kB, estimate=4 kB
+2025-11-12 12:47:50.709 EST [68963] ERROR:  permission denied for table countries
+2025-11-12 12:47:50.709 EST [68963] STATEMENT:  INSERT INTO countries (name, languages, region, population, area, density) VALUES ($1, $2, $3, $4, $5, $6)
+2025-11-12 12:48:41.087 EST [69492] ERROR:  permission denied for table countries
+2025-11-12 12:48:41.087 EST [69492] STATEMENT:  INSERT INTO countries (name, languages, region, population, area, density) VALUES ($1, $2, $3, $4, $5, $6)
+2025-11-12 12:49:54.151 EST [67287] LOG:  checkpoint starting: time
+2025-11-12 12:49:59.189 EST [67287] LOG:  checkpoint complete: wrote 50 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=5.026 s, sync=0.006 s, total=5.039 s; sync files=42, longest=0.001 s, average=0.001 s; distance=156 kB, estimate=156 kB
+2025-11-12 12:54:54.207 EST [67287] LOG:  checkpoint starting: time
+2025-11-12 12:54:56.404 EST [67287] LOG:  checkpoint complete: wrote 21 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.189 s, sync=0.003 s, total=2.198 s; sync files=14, longest=0.001 s, average=0.001 s; distance=105 kB, estimate=150 kB
+2025-11-12 12:57:17.362 EST [69741] ERROR:  syntax error at or near "WHERE" at character 202
+2025-11-12 12:57:17.362 EST [69741] STATEMENT:  
+	    INSERT INTO countries (name, languages, region, population, area, density)
+	    VALUES ($1, $2, $3, $4, $5, $6)
+	    ON CONFLICT (name)
+	    DO UPDATE SET
+	      population = EXCLUDED.population,
+	    WHERE countries.population IS DISTINCT FROM EXCLUDED.population;
+	  
+2025-11-12 12:57:31.801 EST [69760] ERROR:  there is no unique or exclusion constraint matching the ON CONFLICT specification
+2025-11-12 12:57:31.801 EST [69760] STATEMENT:  
+	    INSERT INTO countries (name, languages, region, population, area, density)
+	    VALUES ($1, $2, $3, $4, $5, $6)
+	    ON CONFLICT (name)
+	    DO UPDATE SET
+	      population = EXCLUDED.population
+	    WHERE countries.population IS DISTINCT FROM EXCLUDED.population;
+	  
+2025-11-12 12:59:54.419 EST [67287] LOG:  checkpoint starting: time
+2025-11-12 13:00:00.300 EST [67287] LOG:  checkpoint complete: wrote 56 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=5.867 s, sync=0.007 s, total=5.881 s; sync files=41, longest=0.001 s, average=0.001 s; distance=302 kB, estimate=302 kB
+2025-11-12 13:17:24.413 EST [71044] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:17:54.583 EST [67286] LOG:  could not open file "postmaster.pid": Operation not permitted; continuing anyway
+2025-11-12 13:17:54.585 EST [71109] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:18:24.413 EST [71168] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:18:54.589 EST [67286] LOG:  could not open file "postmaster.pid": Operation not permitted; continuing anyway
+2025-11-12 13:18:54.590 EST [71214] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:18:59.535 EST [71216] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:19:24.414 EST [71232] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:19:54.583 EST [67286] LOG:  could not open file "postmaster.pid": Operation not permitted; continuing anyway
+2025-11-12 13:19:54.587 EST [71242] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:20:20.542 EST [71264] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:20:24.425 EST [71277] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:20:54.583 EST [67286] LOG:  could not open file "postmaster.pid": Operation not permitted; continuing anyway
+2025-11-12 13:20:54.586 EST [71307] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:21:24.423 EST [71325] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:21:54.586 EST [67286] LOG:  could not open file "postmaster.pid": Operation not permitted; continuing anyway
+2025-11-12 13:21:54.587 EST [71375] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:22:01.837 EST [71380] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:22:24.430 EST [71385] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:22:54.588 EST [67286] LOG:  could not open file "postmaster.pid": Operation not permitted; continuing anyway
+2025-11-12 13:22:54.590 EST [71409] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:23:24.426 EST [71420] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:23:32.325 EST [71432] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:23:54.585 EST [67286] LOG:  could not open file "postmaster.pid": Operation not permitted; continuing anyway
+2025-11-12 13:23:54.589 EST [71446] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:24:24.425 EST [71453] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:24:33.778 EST [71459] LOG:  starting PostgreSQL 15.14 (Homebrew) on x86_64-apple-darwin19.6.0, compiled by Apple clang version 12.0.0 (clang-1200.0.32.29), 64-bit
+2025-11-12 13:24:33.780 EST [71459] LOG:  could not bind IPv6 address "::1": Address already in use
+2025-11-12 13:24:33.780 EST [71459] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2025-11-12 13:24:33.781 EST [71459] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2025-11-12 13:24:33.781 EST [71459] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2025-11-12 13:24:33.781 EST [71459] WARNING:  could not create listen socket for "localhost"
+2025-11-12 13:24:33.781 EST [71459] FATAL:  could not create any TCP/IP sockets
+2025-11-12 13:24:33.782 EST [71459] LOG:  database system is shut down
+2025-11-12 13:24:54.588 EST [67286] LOG:  could not open file "postmaster.pid": Operation not permitted; continuing anyway
+2025-11-12 13:24:54.589 EST [71507] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:25:17.685 EST [71731] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:25:24.425 EST [71742] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:25:34.857 EST [71748] LOG:  starting PostgreSQL 15.14 (Homebrew) on x86_64-apple-darwin19.6.0, compiled by Apple clang version 12.0.0 (clang-1200.0.32.29), 64-bit
+2025-11-12 13:25:34.861 EST [71748] LOG:  could not bind IPv6 address "::1": Address already in use
+2025-11-12 13:25:34.861 EST [71748] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2025-11-12 13:25:34.861 EST [71748] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2025-11-12 13:25:34.861 EST [71748] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2025-11-12 13:25:34.861 EST [71748] WARNING:  could not create listen socket for "localhost"
+2025-11-12 13:25:34.861 EST [71748] FATAL:  could not create any TCP/IP sockets
+2025-11-12 13:25:34.864 EST [71748] LOG:  database system is shut down
+2025-11-12 13:25:54.587 EST [67286] LOG:  could not open file "postmaster.pid": Operation not permitted; continuing anyway
+2025-11-12 13:25:54.590 EST [71764] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:26:24.426 EST [71794] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:26:36.271 EST [71799] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted
+2025-11-12 13:26:54.590 EST [67286] LOG:  could not open file "postmaster.pid": Operation not permitted; continuing anyway
+2025-11-12 13:26:54.593 EST [71825] FATAL:  could not open file "global/pg_filenode.map": Operation not permitted

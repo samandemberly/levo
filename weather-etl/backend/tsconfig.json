@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // Or your desired target
+    "module": "commonjs", // Or your desired module system
+    "lib": ["ESNext", "DOM", "DOM.Iterable"], // Include DOM and DOM.Iterable for comprehensive DOM types
+  }
+}
