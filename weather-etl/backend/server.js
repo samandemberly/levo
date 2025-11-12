@@ -20,13 +20,13 @@ const PORT = 3000;
   }
 })();
 
-cron.schedule('0 0 * * *', async () => {
-  console.log('Running daily ETL...');
+cron.schedule('* * * * *', async () => {
+  console.log('Running ETL...');
   try {
     await runETL();
-    console.log('Daily ETL completed successfully.');
+    console.log('ETL completed successfully.');
   } catch (err) {
-    console.error('Daily ETL failed:', err);
+    console.error('ETL failed:', err);
   }
 });
 
